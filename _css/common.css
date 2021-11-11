@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #342557;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+::selection {
+  background: #9d84d6;
+  color: #fff;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #9d84d6;
+  color: #fff;
+  text-shadow: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  word-break: break-all;
+}
+
+table td,
+table th {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+img, video {
+  border: 0;
+  vertical-align: top;
+}
+
+img {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+address, em, cite {
+  font-style: normal;
+  font-weight: normal;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+button img {
+  vertical-align: middle;
+}
+
+input[type=text] {
+  outline: 0;
+}
+
+input[type=search]::-ms-clear,
+input[type=search]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+textarea {
+  outline: 0;
+}
+
+select, textarea, button, input {
+  font: 1.5rem 'Mulish', 'Nanum Gothic Coding' ,sans-serif;
+}
+
+.blind {
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  height: 0;
+  text-indent: -9999px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* show */
+.back-to-position {
+  opacity: 0;
+  transition: 1s;
+}
+
+.back-to-position.to-top {
+  transform: translate(0, 60px);
+}
+
+.back-to-position.to-bottom {
+  transform: translate(0, -60px);
+}
+
+.back-to-position.to-right {
+  transform: translate(-150px, 0);
+}
+
+.back-to-position.to-left {
+  transform: translate(150px, 0);
+}
+
+.show .back-to-position {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.show .back-to-position.delay-0 {
+  transition-delay: 0s;
+}
+
+.show .back-to-position.delay-1 {
+  transition-delay: 0.3s;
+}
+
+.show .back-to-position.delay-2 {
+  transition-delay: 0.6s;
+}
+
+.show .back-to-position.delay-3 {
+  transition-delay: 0.9s;
+}
+
+.show .back-to-position.delay-4 {
+  transition-delay: 1.2s;
+}
+
+.show .back-to-position.delay-5 {
+  transition-delay: 1.5s;
+}
+
+/* btn */
+.btn {
+  display: inline-block;
+  padding: 1em 2em;
+  background-color: #161025;
+  border: 1px solid #161025;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #44316e;
+  border: 1px solid #44316e;
+  color: #fff;
+}
+
+.btn--reverse {
+  background-color: transparent;
+  border: 1px solid #161025;
+  color: #161025;
+}
+
+.btn--reverse:hover,
+.btn--reverse:focus {
+  background-color: #44316e;
+  border: 1px solid #44316e;
+  color: #fff;
+}
+
+.btn--right {
+  background-color: #6951a3;
+  border: 1px solid #6951a3;
+  color: #fff;
+}
+
+.btn--right:hover,
+.btn--right:focus {
+  background-color: #9d84d6;
+  border: 1px solid #9d84d6;
+  color: #fff;
+}
+
+.btn--right--reverse {
+  background-color: transparent;
+  border: 1px solid #6951a3;
+  color: #6951a3;
+}
+
+.btn--right--reverse:hover,
+.btn--right--reverse:focus {
+  background-color: #9d84d6;
+  border: 1px solid #9d84d6;
+  color: #fff;
+}
+
+.btn--white {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn--white:hover,
+.btn--white:focus {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #6951a3;
+}
+
+/* topBtn */
+#topBtn {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  width: 4.5em;
+  height: 4.5em;
+  background-color: #6951a3;
+}
+
+#topBtn span {
+  font-size: 3rem;
+  color: #fff;
+}
