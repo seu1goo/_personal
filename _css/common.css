@@ -12,7 +12,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #342557;
+  background: #283730;
   border-radius: 3px;
 }
 
@@ -21,14 +21,14 @@
 }
 
 ::selection {
-  background: #9d84d6;
-  color: #fff;
+  background: #daded0;
+  color: #333;
   text-shadow: none;
 }
 
 ::-moz-selection {
-  background: #9d84d6;
-  color: #fff;
+  background: #daded0;
+  color: #333;
   text-shadow: none;
 }
 
@@ -65,7 +65,8 @@ a:focus {
   outline: none !important;
 }
 
-img, video {
+img,
+video {
   border: 0;
   vertical-align: top;
 }
@@ -74,11 +75,18 @@ img {
   display: block;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 400;
 }
 
-address, em, cite {
+address,
+em,
+cite {
   font-style: normal;
   font-weight: normal;
 }
@@ -93,12 +101,12 @@ button img {
   vertical-align: middle;
 }
 
-input[type=text] {
+input[type="text"] {
   outline: 0;
 }
 
-input[type=search]::-ms-clear,
-input[type=search]::-ms-reveal {
+input[type="search"]::-ms-clear,
+input[type="search"]::-ms-reveal {
   display: none;
   width: 0;
   height: 0;
@@ -115,8 +123,11 @@ textarea {
   outline: 0;
 }
 
-select, textarea, button, input {
-  font: 1.5rem 'Mulish', 'Nanum Gothic Coding' ,sans-serif;
+select,
+textarea,
+button,
+input {
+  font: 1.5rem "Mulish", "Nanum Gothic Coding", sans-serif;
 }
 
 .blind {
@@ -129,7 +140,7 @@ select, textarea, button, input {
 
 .clearfix:before,
 .clearfix:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
@@ -189,57 +200,57 @@ select, textarea, button, input {
 .btn {
   display: inline-block;
   padding: 1em 2em;
-  background-color: #161025;
-  border: 1px solid #161025;
-  font-size: 1.8rem;
-  font-weight: 600;
+  background-color: #243326;
+  border: 1px solid #243326;
+  font-size: 2rem;
+  font-weight: 500;
   color: #fff;
   transition: all 0.3s;
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: #44316e;
-  border: 1px solid #44316e;
+  background-color: #45604a;
+  border: 1px solid #45604a;
   color: #fff;
 }
 
 .btn--reverse {
   background-color: transparent;
-  border: 1px solid #161025;
-  color: #161025;
+  border: 1px solid #45604a;
+  color: #243326;
 }
 
 .btn--reverse:hover,
 .btn--reverse:focus {
-  background-color: #44316e;
-  border: 1px solid #44316e;
+  background-color: #45604a;
+  border: 1px solid #45604a;
   color: #fff;
 }
 
 .btn--right {
-  background-color: #6951a3;
-  border: 1px solid #6951a3;
+  background-color: #768d70;
+  border: 1px solid #768d70;
   color: #fff;
 }
 
 .btn--right:hover,
 .btn--right:focus {
-  background-color: #9d84d6;
-  border: 1px solid #9d84d6;
+  background-color: #acbf9c;
+  border: 1px solid #acbf9c;
   color: #fff;
 }
 
 .btn--right--reverse {
   background-color: transparent;
-  border: 1px solid #6951a3;
-  color: #6951a3;
+  border: 1px solid #768d70;
+  color: #768d70;
 }
 
 .btn--right--reverse:hover,
 .btn--right--reverse:focus {
-  background-color: #9d84d6;
-  border: 1px solid #9d84d6;
+  background-color: #acbf9c;
+  border: 1px solid #acbf9c;
   color: #fff;
 }
 
@@ -253,7 +264,7 @@ select, textarea, button, input {
 .btn--white:focus {
   background-color: #fff;
   border: 1px solid #fff;
-  color: #6951a3;
+  color: #768d70;
 }
 
 /* topBtn */
@@ -261,12 +272,12 @@ select, textarea, button, input {
   position: fixed;
   bottom: 5%;
   right: 3%;
-  width: 4.5em;
-  height: 4.5em;
-  background-color: #6951a3;
+  width: 4em;
+  height: 4em;
+  background-color: #283730;
 }
 
 #topBtn span {
-  font-size: 3rem;
+  font-size: 2.4rem;
   color: #fff;
 }

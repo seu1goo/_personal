@@ -2,8 +2,8 @@
 
 /* layout */
 body {
-  font: 1.5rem 'Mulish', 'S-CoreDream-4Regular', sans-serif;
-  letter-spacing: -0.08em;
+  font: 1.5rem "Rajdhani", "S-CoreDream-4Regular", sans-serif;
+  letter-spacing: -0.01em;
   color: #555;
   overflow-x: hidden;
 }
@@ -30,127 +30,14 @@ section {
 .secTit h3 {
   font-size: 4.5rem;
   font-weight: 700;
-  color: #342557;
+  color: #283730;
 }
 
 .secDetail h4 {
   margin-bottom: 0.3em;
   font-size: 2.8rem;
   font-weight: 600;
-  color: #6951a3;
-}
-
-/* loading */
-#loading {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100vw;
-  height: 100vh;
-  background-color: #fff;
-  z-index: 999;
-}
-
-#loading .load .loader {
-  width: 5em;
-  height: 5em;
-  border-radius: 50%;
-  perspective: 80em;
-  margin: 0 auto 3em;
-}
-
-#loading .load .loader .circle {
-  position: absolute;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;  
-}
-
-#loading .load .loader .circle.one {
-  left: 0%;
-  top: 0%;
-  animation: rotate-one 1.5s linear infinite;
-  border-bottom: 5px solid #342557;
-}
-
-#loading .load .loader .circle.two {
-  right: 0%;
-  top: 0%;
-  animation: rotate-two 1.5s linear infinite;
-  border-right: 5px solid #6951a3;
-}
-
-#loading .load .loader .circle.three {
-  right: 0%;
-  bottom: 0%;
-  animation: rotate-three 1.5s linear infinite;
-  border-top: 5px solid #9d84d6;
-}
-
-@keyframes rotate-one {
-  0% {
-    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-  }
-  100% {
-    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
-  }
-}
-
-@keyframes rotate-two {
-  0% {
-    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-  }
-  100% {
-    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
-  }
-}
-
-@keyframes rotate-three {
-  0% {
-    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-  }
-  100% {
-    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
-  }
-}
-
-/* ieFalse */
-#ieFalse {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background-color: #fff;
-  z-index: 9999;
-  display: none;
-}
-
-#ieFalse.ieShow {
-  display: block;
-}
-
-#ieFalse .txtArea {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#ieFalse p {
-  font-size: 1.7rem;
-}
-
-#ieFalse h3 {
-  margin-top: 0.5em;
-  font-size: 2rem;
-  color: #6951a3;
+  color: #405840;
 }
 
 /* header */
@@ -159,7 +46,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2em 0;
+  padding: 1.5em 0;
   z-index: 9;
   transition: all 0.3s;
 }
@@ -191,8 +78,8 @@ header nav ul li a {
   width: 100%;
   height: 100%;
   font-size: 2rem;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  color: #768d70;
   transition: all 0.4s;
 }
 
@@ -207,13 +94,9 @@ header.move-down {
   transition: all 0.3s;
 }
 
-header.move-down nav ul li a {
-  color: #9d84d6;
-}
-
 header.move-down nav ul li a:hover,
 header.move-down nav ul li a:focus {
-  color: #342557;
+  color: #283730;
 }
 
 /* mainVisual */
@@ -221,12 +104,12 @@ header.move-down nav ul li a:focus {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url('/_img/mainvisual01.jpg') no-repeat center / cover;
+  background: url("/_img/mainvisual.jpg") no-repeat center / cover;
   background-attachment: fixed;
 }
 
-#mainVisual:after {
-  content: '';
+/* #mainVisual:after {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -234,103 +117,22 @@ header.move-down nav ul li a:focus {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+} */
+
+#mainVisual .txtArea {
+  margin-top: 13em;
 }
 
-#mainVisual .swiper-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-}
-
-#mainVisual .swiper-container .swiper-wrapper .swiper-slide .txtArea {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
-}
-
-#mainVisual .swiper-container .swiper-wrapper .swiper-slide .txtArea h2 {
-  position: relative;
-  width: 50%;
-  height: 6em;
-  background-color: rgba(255, 255, 255, 0.9);
-  margin: 0 auto 3em;
-  box-sizing: border-box;
-}
-
-#mainVisual .swiper-container .swiper-wrapper .swiper-slide .txtArea h2 img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: block;
-  height: 55%;
-}
-
-#mainVisual .swiper-container .swiper-wrapper .swiper-slide .txtArea h3 {
-  font-family: 'S-CoreDream-5Medium', sans-serif;
-  font-size: 2.5rem;
+#mainVisual .txtArea h1 {
+  font-size: 5rem;
   font-weight: 500;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.9);
+  color: #405840;
+  z-index: 2;
 }
 
-#mainVisual .swiper-container .swiper-wrapper .swiper-slide .txtArea h3 .mobBr {
-  display: none;
-}
-
-#mainVisual .swiper-container .paging {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20em;
-  height: 3em;
-  z-index: 9;
-}
-
-#mainVisual .swiper-container .paging .swiper-button-prev,
-#mainVisual .swiper-container .paging .swiper-button-next {
-  color: rgba(255, 255, 255, 0.8);
-  background-size: 1.3em;
-}
-
-#mainVisual .swiper-container .paging .swiper-button-prev {
-  background-image: url('/_img/mainvisual_prev_arrow.svg');
-  left: 0;
-}
-
-#mainVisual .swiper-container .paging .swiper-button-next {
-  background-image: url('/_img/mainvisual_next_arrow.svg');
-  right: 0;
-}
-
-#mainVisual .swiper-container .paging .swiper-pagination {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-}
-
-#mainVisual .swiper-container .paging .swiper-pagination .swiper-pagination-bullet {
-  width: 1em;
-  height: 1em;
-  margin-right: 0.5em;
-  background-color: #fff;
-  opacity: 0.8;
-}
-
-#mainVisual .swiper-container .paging .swiper-pagination .swiper-pagination-bullet-active {
-  width: 5em;
-  border-radius: 1em;
-  background-color: #fff;
-  opacity: 1;
+#mainVisual .txtArea h2 {
+  font-size: 2rem;
 }
 
 /* introduce */
@@ -339,58 +141,59 @@ header.move-down nav ul li a:focus {
   width: 100%;
 }
 
-#introduce .introDetail>div {
+#introduce .introDetail > div {
   width: calc((100% - 6em) / 3);
   margin-right: 3em;
   box-sizing: border-box;
 }
 
-#introduce .introDetail>div:last-child {
-  margin-right: 0
+#introduce .introDetail > div:last-child {
+  margin-right: 0;
 }
 
-#introduce .introDetail>div .titArea {
+#introduce .introDetail > div .titArea {
   display: flex;
 }
 
-#introduce .introDetail>div .titArea span {
+#introduce .introDetail > div .titArea span {
   display: inline-block;
   padding-top: 0.15em;
   margin-right: 0.3em;
   font-size: 2.4rem;
   font-weight: 500;
-  color: #6951a3;
+  color: #405840;
 }
 
-#introduce .introDetail>div ul {
+#introduce .introDetail > div ul {
   padding-top: 0.8em;
-  border-top: 2px solid #6951a3;
+  border-top: 2px solid #405840;
 }
 
-#introduce .introDetail>div ul li {
+#introduce .introDetail > div ul li {
   padding-bottom: 0.8em;
   margin-bottom: 0.8em;
   border-bottom: 1px solid #ccc;
 }
 
-#introduce .introDetail>div ul li p {
+#introduce .introDetail > div ul li p {
   margin-bottom: 0.2em;
+  font-size: 1.6rem;
   font-weight: 600;
-  color: #9d84d6;
+  color: #768d70;
 }
 
-#introduce .introDetail>div ul li h5 {
+#introduce .introDetail > div ul li h5 {
   margin-bottom: 0.08em;
-  font-family: 'S-CoreDream-5Medium', sans-serif;
-  font-size: 1.8rem;
+  font-family: "S-CoreDream-5Medium", sans-serif;
+  font-size: 1.7rem;
   font-weight: 500;
   color: #333;
 }
 
-#introduce .introDetail>div ul li b {
-  font-family: 'S-CoreDream-4Regular', sans-serif;
+#introduce .introDetail > div ul li b {
+  font-family: "S-CoreDream-4Regular", sans-serif;
   word-break: keep-all;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 #introduce .introDetail .information figure {
@@ -414,7 +217,7 @@ header.move-down nav ul li a:focus {
 #introduce .introDetail .information ul li span {
   display: inline-block;
   margin-right: 0.3em;
-  font-family: 'S-CoreDream-5Medium', sans-serif;
+  font-family: "S-CoreDream-5Medium", sans-serif;
   font-weight: 500;
   color: #333;
 }
@@ -425,7 +228,7 @@ header.move-down nav ul li a:focus {
 
 /* skills */
 #skills {
-  background-color: #eeeaf5;
+  background-color: #ededed;
 }
 
 #skills .skillDetail {
@@ -444,14 +247,14 @@ header.move-down nav ul li a:focus {
 }
 
 #skills .skillDetail .skillLanguage:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: -3em;
   display: block;
   width: 1px;
   height: 100%;
-  border-right: 2px dashed #9d84d6;
+  border-right: 2px dashed #d6dbd4;
 }
 
 #skills .skillDetail ul li {
@@ -496,25 +299,25 @@ header.move-down nav ul li a:focus {
 }
 
 #skills .skillDetail ul li .graphArea .bar::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 2em;
   z-index: -2;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.85);
 }
 
 #skills .skillDetail ul li .graphArea .bar::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   display: block;
   width: 100%;
   height: 2em;
-  background: #6951a3;
+  background: #768d70;
   z-index: -1;
 }
 
@@ -523,32 +326,32 @@ header.move-down nav ul li a:focus {
 }
 
 #skills .skillDetail ul li .graphArea .bar2::after {
-  max-width: 90%;
+  max-width: 80%;
 }
 
 #skills .skillDetail ul li .graphArea .bar3::after {
-  max-width: 50%;
-}
-
-#skills .skillDetail ul li .graphArea .bar4::after {
-  max-width: 50%;
-}
-
-#skills .skillDetail ul li .graphArea .bar5::after {
   max-width: 70%;
 }
 
+#skills .skillDetail ul li .graphArea .bar4::after {
+  max-width: 60%;
+}
+
+#skills .skillDetail ul li .graphArea .bar5::after {
+  max-width: 50%;
+}
+
 #skills .skillDetail ul li .graphArea .bar6::after {
-  max-width: 90%;
+  max-width: 40%;
 }
 
 #skills .skillDetail ul li .graphArea .bar7::after {
-  max-width: 90%;
+  max-width: 30%;
 }
 
 #skills .skillDetail ul li .graphArea p {
   margin-top: 0.5em;
-  font-family: 'S-CoreDream-5Medium', sans-serif;
+  font-family: "S-CoreDream-5Medium", sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
 }
@@ -567,115 +370,23 @@ header.move-down nav ul li a:focus {
   }
 }
 
-/* graphic */
-#graphic .graphicDetail .mySwiper2 {
-  height: 35em;
-  margin-bottom: 3em;
-  overflow: hidden;
-}
-
-#graphic .graphicDetail .mySwiper2 .swiper-slide {
-  position: relative;
-}
-
-#graphic .graphicDetail .mySwiper2 .swiper-slide img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#graphic .graphicDetail .mySwiper2 .swiper-button-prev {
-  background-image: url('/_img/graphic_prev_arrow.svg');
-  left: 0;
-}
-
-#graphic .graphicDetail .mySwiper2 .swiper-button-next {
-  background-image: url('/_img/graphic_next_arrow.svg');
-  right: 0;
-}
-
-#graphic .graphicDetail .mySwiper2 .swiper-button-prev:after,
-#graphic .graphicDetail .mySwiper2 .swiper-button-next:after {
-  color: #6951a3;
-}
-
-#graphic .graphicDetail .mySwiper2 .graphicHover {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-}
-
-#graphic .graphicDetail .mySwiper2 .graphicHover span {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  font-size: 10rem;
-  color: rgba(200, 200, 200, 0.6);
-  opacity: 0;
-  transition: all 0.4s;
-}
-
-#graphic .graphicDetail .mySwiper2:hover .graphicHover span {
-  opacity: 1;
-}
-
-#graphic .graphicDetail .mySwiper {
-  height: 10em;
-  overflow: hidden;
-}
-
-#graphic .graphicDetail .mySwiper .swiper-slide {
-  position: relative;
-  overflow: hidden;
-  background-color: #222;
-  cursor: pointer;
-}
-
-#graphic .graphicDetail .mySwiper .swiper-slide img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0.6;
-  transition: all 0.6s;
-}
-
-#graphic .graphicDetail .mySwiper .swiper-slide:hover img,
-#graphic .graphicDetail .mySwiper .swiper-slide:focus img {
-  transform: translate(-50%, -50%) scale(1.2);
-  transition: all 0.6s;
-}
-
-#graphic .graphicDetail .mySwiper .swiper-slide-thumb-active {
-  border: 4px solid #9d84d6;
-  box-sizing: border-box;
-}
-
-#graphic .graphicDetail .mySwiper .swiper-slide-thumb-active img {
-  position: relative;
-  opacity: 1;
-}
-
 /* portfolio */
-#portfolio {
-  background-color: #f6f3fa;
-}
-
 #portfolio .portfolioDetail .portfolioTab {
   display: flex;
-  margin-bottom: 2.6em;
+  margin-bottom: 2em;
 }
 
 #portfolio .portfolioDetail .portfolioTab li {
   margin-right: 1.5em;
 }
 
+#portfolio .portfolioDetail .portfolioTab li a {
+  font-size: 1.7rem;
+}
+
 #portfolio .portfolioDetail .portfolioTab li a.active {
-  background-color: #161025;
-  border: 1px solid #161025;
+  background-color: #243326;
+  border: 1px solid #243326;
   color: #fff;
 }
 
@@ -685,9 +396,9 @@ header.move-down nav ul li a:focus {
 
 #portfolio .portfolioDetail .portfolioCon h5 {
   margin-bottom: 2em;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   word-break: keep-all;
-  color: #342557;
+  color: #243326;
 }
 
 #portfolio .portfolioDetail .portfolioCon h5 br {
@@ -698,7 +409,7 @@ header.move-down nav ul li a:focus {
   display: inline-block;
   width: 100%;
   margin-top: 0.2em;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: #666;
 }
 
@@ -713,7 +424,7 @@ header.move-down nav ul li a:focus {
   height: 100%;
   margin: 0 3em 3em 0;
   padding: 1.5em;
-  box-shadow: 0 0 5px rgba(52, 37, 87, 0.6);
+  box-shadow: 0 0 5px rgba(100, 100, 80, 0.4);
   box-sizing: border-box;
 }
 
@@ -742,8 +453,12 @@ header.move-down nav ul li a:focus {
 }
 
 #portfolio .portfolioDetail .portfolioCon ul li .txtArea h4 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-bottom: 0.5em;
+}
+
+#portfolio .portfolioDetail .portfolioCon ul li .txtArea h4 span {
+  font-size: 2rem;
 }
 
 #portfolio .portfolioDetail .portfolioCon ul li .txtArea table {
@@ -756,17 +471,18 @@ header.move-down nav ul li a:focus {
   padding: 0.5em;
   vertical-align: top;
   border: 1px solid #bbb;
-  font-family: 'S-CoreDream-5Medium', sans-serif;
+  font-family: "S-CoreDream-5Medium", sans-serif;
   font-weight: 500;
   text-align: center;
   box-sizing: border-box;
 }
 
 #portfolio .portfolioDetail .portfolioCon ul li .txtArea table td {
-  padding: 0.5em;
+  padding: 0.4em;
   vertical-align: top;
   border: 1px solid #bbb;
   box-sizing: border-box;
+  font-size: 1.6rem;
   font-weight: 600;
   letter-spacing: -0.05em;
   word-break: keep-all;
@@ -778,9 +494,9 @@ header.move-down nav ul li a:focus {
 
 #portfolio .portfolioDetail .portfolioCon ul li .txtArea .btnArea .btn {
   display: inline-block;
-  padding: 0.8em 1.44em;
+  padding: 0.8em 1em;
   box-sizing: border-box;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-align: center;
 }
 
@@ -840,12 +556,12 @@ header.move-down nav ul li a:focus {
 }
 
 #projectDocument .swiper-container .swiper-button-prev {
-  background-image: url('/_img/mainvisual_prev_arrow.svg');
+  background-image: url("/_img/mainvisual_prev_arrow.svg");
   left: 10%;
 }
 
 #projectDocument .swiper-container .swiper-button-next {
-  background-image: url('/_img/mainvisual_next_arrow.svg');
+  background-image: url("/_img/mainvisual_next_arrow.svg");
   right: 10%;
 }
 
@@ -864,8 +580,82 @@ header.move-down nav ul li a:focus {
 }
 
 #projectDocument .swiper-container .reClose span {
-  font-size: 6rem;
+  font-size: 4rem;
   color: #fff;
+}
+
+/* graphic */
+#graphic {
+  background-color: #ededed;
+}
+
+#graphic .graphicDetail .mySwiper2 {
+  height: 35em;
+  margin-bottom: 3em;
+  overflow: hidden;
+}
+
+#graphic .graphicDetail .mySwiper2 .swiper-slide {
+  position: relative;
+}
+
+#graphic .graphicDetail .mySwiper2 .swiper-slide img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#graphic .graphicDetail .mySwiper2 .swiper-button-prev {
+  background-image: url("/_img/graphic_prev_arrow.svg");
+  left: 0;
+}
+
+#graphic .graphicDetail .mySwiper2 .swiper-button-next {
+  background-image: url("/_img/graphic_next_arrow.svg");
+  right: 0;
+}
+
+#graphic .graphicDetail .mySwiper2 .swiper-button-prev:after,
+#graphic .graphicDetail .mySwiper2 .swiper-button-next:after {
+  color: #405840;
+}
+
+#graphic .graphicDetail .mySwiper {
+  height: 10em;
+  overflow: hidden;
+}
+
+#graphic .graphicDetail .mySwiper .swiper-slide {
+  position: relative;
+  overflow: hidden;
+  background-color: #222;
+  cursor: pointer;
+}
+
+#graphic .graphicDetail .mySwiper .swiper-slide img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.6;
+  transition: all 0.6s;
+}
+
+#graphic .graphicDetail .mySwiper .swiper-slide:hover img,
+#graphic .graphicDetail .mySwiper .swiper-slide:focus img {
+  transform: translate(-50%, -50%) scale(1.2);
+  transition: all 0.6s;
+}
+
+#graphic .graphicDetail .mySwiper .swiper-slide-thumb-active {
+  border: 4px solid #768d70;
+  box-sizing: border-box;
+}
+
+#graphic .graphicDetail .mySwiper .swiper-slide-thumb-active img {
+  position: relative;
+  opacity: 1;
 }
 
 /* contact */
@@ -937,9 +727,9 @@ header.move-down nav ul li a:focus {
 #contact .contactDetail .mailForm form .meArea label {
   display: inline-block;
   margin-bottom: 0.5em;
-  font-size: 2.2rem;
-  font-weight: 600;
-  color: #342557;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #768d70;
 }
 
 #contact .contactDetail .mailForm form ul li label span,
@@ -947,22 +737,22 @@ header.move-down nav ul li a:focus {
   display: inline-block;
   vertical-align: middle;
   margin-right: 0.1em;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 
 #contact .contactDetail .mailForm form ul li input {
   width: 100%;
   padding: 0.5em 1em;
-  border: 1px solid #9d84d6;
-  background-color: #eeeaf5;
-  font-family: 'S-CoreDream-3Light', sans-serif;
+  border: 1px solid #768d70;
+  background-color: #ebebeb;
+  font-family: "S-CoreDream-3Light", sans-serif;
   font-size: 1.4rem;
-  color: #6951a3;
+  color: #283730;
 }
 
 #contact .contactDetail .mailForm form ul li input::placeholder {
-  color: #342557;
+  color: #283730;
 }
 
 #contact .contactDetail .mailForm form .meArea {
@@ -973,35 +763,25 @@ header.move-down nav ul li a:focus {
   width: 100%;
   height: 8em;
   padding: 1em;
-  border: 1px solid #9d84d6;
-  background-color: #eeeaf5;
+  border: 1px solid #768d70;
+  background-color: #ebebeb;
 }
 
 #contact .contactDetail .mailForm form .meArea textarea::placeholder {
-  font-family: 'S-CoreDream-4Regular', sans-serif;
-  color: #342557;
+  font-family: "S-CoreDream-4Regular", sans-serif;
+  color: #283730;
 }
 
 #contact .contactDetail .mailForm form button {
+  font-size: 1.7rem;
   float: right;
 }
 
 /* footer */
 footer {
   width: 100%;
-  padding: 3em 0;
-  background-color: #342557;
-}
-
-footer .w3cIcon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1.5em;
-}
-
-footer .w3cIcon li:first-child {
-  margin-right: 0.5em;
+  padding: 2em 0;
+  background-color: #2f442f;
 }
 
 footer p {
