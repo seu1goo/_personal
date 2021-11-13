@@ -1,13 +1,4 @@
-@media screen and (min-width: 1601px) and (max-width: 1660px) {
-
-  /* portfolio */
-  #portfolio .portfolioDetail .portfolioCon ul li .txtArea table th {
-    font-size: 1.3rem;
-  }
-}
-
-@media screen and (min-width: 1400px) and (max-width: 1600px) {
-
+@media screen and (min-width: 1400px) and (max-width: 1700px) {
   /* mainVisual */
   #mainVisual .swiper-container .swiper-wrapper .swiper-slide .txtArea h2 {
     width: 90%;
@@ -21,7 +12,6 @@
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1399px) {
-
   /* layout */
   .inner {
     width: 90%;
@@ -80,7 +70,6 @@
 }
 
 @media screen and (min-width: 970px) and (max-width: 1150px) {
-
   /* portfolio */
   #portfolio .portfolioDetail .portfolioCon ul li {
     display: block;
@@ -101,7 +90,6 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-
   /* common */
   html {
     font-size: 9px;
@@ -118,7 +106,7 @@
   }
 
   /* introduce */
-  #introduce .introDetail>div ul li b {
+  #introduce .introDetail > div ul li b {
     font-size: 1.5rem;
   }
 
@@ -179,7 +167,6 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 970px) {
-
   /* graphic */
   #graphic .graphicDetail .mySwiper2 .swiper-slide img {
     height: 100%;
@@ -237,7 +224,6 @@
 }
 
 @media screen and (min-width: 641px) and (max-width: 768px) {
-
   /* common */
   html {
     font-size: 8px;
@@ -350,9 +336,8 @@
 }
 
 @media screen and (min-width: 641px) and (max-width: 730px) {
-
   /* introduce */
-  #introduce .introDetail>div ul li h5 {
+  #introduce .introDetail > div ul li h5 {
     font-size: 1.7rem;
   }
 
@@ -374,7 +359,6 @@
 }
 
 @media screen and (max-width: 640px) {
-
   /* common */
   html {
     font-size: 8px;
@@ -482,7 +466,13 @@
     display: none;
   }
 
-  #mainVisual .swiper-container .swiper-wrapper .swiper-slide .txtArea h3 .mobBr {
+  #mainVisual
+    .swiper-container
+    .swiper-wrapper
+    .swiper-slide
+    .txtArea
+    h3
+    .mobBr {
     display: block;
   }
 
@@ -491,7 +481,7 @@
     display: block;
   }
 
-  #introduce .introDetail>div {
+  #introduce .introDetail > div {
     width: 100%;
     margin-right: 0;
     margin-bottom: 3em;
@@ -678,7 +668,6 @@
 }
 
 @media screen and (min-width: 301px) and (max-width: 369px) {
-
   /* portfolio */
   #portfolio .portfolioDetail .portfolioTab li {
     width: 100%;
@@ -693,7 +682,6 @@
 }
 
 @media screen and (max-width: 300px) {
-
   /* mainVisual */
   #mainVisual .swiper-container .swiper-wrapper .swiper-slide .txtArea h2 img {
     height: 40%;
@@ -704,8 +692,8 @@
   }
 
   /* introduce */
-  #introduce .introDetail>div ul li b {
-    font-family: 'S-CoreDream-4Regular', sans-serif;
+  #introduce .introDetail > div ul li b {
+    font-family: "S-CoreDream-4Regular", sans-serif;
     font-size: 1.5rem;
   }
 

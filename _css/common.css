@@ -127,7 +127,7 @@ select,
 textarea,
 button,
 input {
-  font: 1.5rem "Mulish", "Nanum Gothic Coding", sans-serif;
+  font: 1.5rem "Rajdhani", "Nanum Gothic Coding", sans-serif;
 }
 
 .blind {
@@ -236,8 +236,8 @@ input {
 
 .btn--right:hover,
 .btn--right:focus {
-  background-color: #acbf9c;
-  border: 1px solid #acbf9c;
+  background-color: #45604a;
+  border: 1px solid #45604a;
   color: #fff;
 }
 
