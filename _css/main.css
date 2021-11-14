@@ -752,6 +752,7 @@ header.move-down {
 
 #contact .contactDetail .mailForm form button {
   font-size: 1.7rem;
+  font-weight: 500;
   float: right;
 }
 
