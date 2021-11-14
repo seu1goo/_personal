@@ -371,7 +371,7 @@
 
   /* header */
   header {
-    padding: 1.5em 0;
+    padding: 1em 0;
   }
 
   header .mobMenu {
@@ -385,7 +385,7 @@
     width: 90%;
     height: 100vh;
     padding: 1.5em;
-    background-color: #eeeaf5;
+    background-color: #ebebeb;
     box-sizing: border-box;
     transition: 0.7s;
   }
@@ -406,8 +406,8 @@
   }
 
   header nav .mobMenuClose a span {
-    font-size: 4rem;
-    color: #342557;
+    font-size: 3rem;
+    color: #283730;
   }
 
   header nav ul {
@@ -420,8 +420,8 @@
   }
 
   header nav ul li a {
-    font-size: 3rem;
-    color: #9d84d6;
+    font-size: 2.4rem;
+    color: #768d70;
   }
 
   header .mobMenu a {
@@ -431,12 +431,12 @@
   }
 
   header .mobMenu a span {
-    font-size: 4rem;
-    color: #fff;
+    font-size: 3rem;
+    color: #283730;
   }
 
   header.move-down .mobMenu a span {
-    color: #342557;
+    color: #192922;
   }
 
   /* mainVisual */
@@ -504,7 +504,7 @@
     margin-bottom: 3em;
   }
 
-  #skills .skillDetail ul li.illustrator {
+  #skills .skillDetail ul li:last-child {
     margin-bottom: 0;
   }
 
@@ -518,6 +518,7 @@
 
   #skills .skillDetail ul li .logoArea {
     width: calc(29% - 1.5em);
+    margin-bottom: 0.8em;
   }
 
   #skills .skillDetail ul li .graphArea {

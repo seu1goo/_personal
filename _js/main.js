@@ -3,15 +3,6 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 }
 // javascript
 
-// if (navigator.userAgent.indexOf('Trident') > 0) {
-//   location.href = "microsoft-edge:" + location.href;
-//   document.querySelector('#ieFalse .first').innerText = '이 페이지는 최신 기반의 브라우져에서 동작하므로,'
-//   document.querySelector('#ieFalse .second').innerText = 'IE (인터넷 익스플로어) 브라우져에서 확인이 불가능합니다.'
-//   document.querySelector('#ieFalse h3').innerText = '잠시 후, Microsoft Edge (마이크로소프트 엣지) 브라우져로 이동됩니다.'
-//   setTimeout(close);
-// };
-// exploer -> edge
-
 const spyEls = document.querySelectorAll(".scroll-spy");
 spyEls.forEach(function (spyEl) {
   new ScrollMagic.Scene({
@@ -53,13 +44,16 @@ $("nav ul li a").click(function (e) {
 const mobMenu = document.querySelector("header .mobMenu");
 const mobMenuClose = document.querySelector("header .mobMenuClose");
 const nav = document.querySelector("header nav");
-const navList = document.querySelectorAll("header nav ul li");
+const navList = document.querySelector("header nav ul li a");
 
 if (window.matchMedia("max-width: 640px")) {
   mobMenu.addEventListener("click", function () {
     nav.classList.add("slide-right");
   });
   mobMenuClose.addEventListener("click", function () {
+    nav.classList.remove("slide-right");
+  });
+  nav.addEventListener("click", function () {
     nav.classList.remove("slide-right");
   });
 }
