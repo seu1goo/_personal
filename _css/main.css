@@ -85,18 +85,13 @@ header nav ul li a {
 
 header nav ul li a:hover,
 header nav ul li a:focus {
-  color: #fff;
+  color: #192922;
 }
 
 header.move-down {
   background-color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s;
-}
-
-header.move-down nav ul li a:hover,
-header.move-down nav ul li a:focus {
-  color: #283730;
 }
 
 /* mainVisual */
