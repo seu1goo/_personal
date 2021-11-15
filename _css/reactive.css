@@ -583,10 +583,6 @@
     text-align: center;
   }
 
-  #portfolio .portfolioDetail .portfolioTab li a br {
-    display: block;
-  }
-
   #portfolio .portfolioDetail .portfolioTab li a span {
     display: none;
   }
@@ -676,10 +672,6 @@
     margin-right: 0;
     margin-bottom: 1.5em;
   }
-
-  #portfolio .portfolioDetail .portfolioTab li a br {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 300px) {
@@ -740,10 +732,6 @@
     height: auto;
     margin-right: 0;
     margin-bottom: 1.5em;
-  }
-
-  #portfolio .portfolioDetail .portfolioTab li a br {
-    display: none;
   }
 
   #portfolio .portfolioDetail .portfolioCon ul li {

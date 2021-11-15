@@ -346,21 +346,23 @@ header.move-down {
 }
 
 #portfolio .portfolioDetail .portfolioTab li {
-  margin-right: 1.5em;
+  width: calc((100% - 3em) / 2);
+}
+
+#portfolio .portfolioDetail .portfolioTab li:first-child {
+  margin-right: 3em;
 }
 
 #portfolio .portfolioDetail .portfolioTab li a {
-  font-size: 1.7rem;
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
 }
 
 #portfolio .portfolioDetail .portfolioTab li a.active {
   background-color: #243326;
   border: 1px solid #243326;
   color: #fff;
-}
-
-#portfolio .portfolioDetail .portfolioTab li a br {
-  display: none;
 }
 
 #portfolio .portfolioDetail .portfolioCon h5 {
